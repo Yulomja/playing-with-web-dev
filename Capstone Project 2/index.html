@@ -22,6 +22,18 @@
         .link-body-emphasis {
             color: rgba(255, 255, 255, 0.661) !important;
         }
+
+        /* custom hover emphasis */
+        .nav-pills .nav-link {
+            transition: all 0.3s ease;
+        }
+
+        .nav-pills .nav-link:hover {
+            background-color: rgb(99, 101, 241);
+            /* soft indigo background */
+            color: white;
+            /* indigo text */
+        }
     </style>
 </head>
 
@@ -29,23 +41,63 @@
     <!-- Header -->
     <section>
         <div class="container">
-            <header
-                class="d-flex flex-wrap justify-content-center py-3 mb-4 mt-2 border-light border-bottom border-top align-items-center"
-                style="--bs-border-opacity: .15;">
-                <span class="fs-4 text mb-3 mb-md-0 me-md-auto">Loredana Piazza</span>
-                <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="#" class="nav-link link-body-emphasis active"
-                            aria-current="page">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-body-emphasis">Experience</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-body-emphasis">Projects</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-body-emphasis">Skills</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-body-emphasis">Education</a></li>
-                </ul>
-            </header>
+            <nav class="navbar navbar-expand-md pt-3 mb-2 mt-2 bg-transparent">
+                <div class="container-fluid">
+                    <!-- Brand / Logo -->
+                    <p class="navbar-brand fs-4 text-light m-0">Loredana Piazza</p>
+
+                    <!-- Hamburger / Toggler -->
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <!-- custom hamburger (so it works without navbar-light/dark) -->
+                        <span class="navbar-toggler-icon"
+                            style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'30\' height=\'30\' fill=\'white\' class=\'bi bi-list\' viewBox=\'0 0 16 16\'><path fill-rule=\'evenodd\' d=\'M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z\'/></svg>');"></span>
+                    </button>
+
+                    <!-- Collapsible Nav Links -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="nav nav-pills flex-column flex-md-row ms-md-auto align-items-center">
+                            <li class="nav-item m-1">
+                                <a href="#" class="nav-link link-body-emphasis">About</a>
+                            </li>
+                            <li class="nav-item m-1">
+                                <a href="#" class="nav-link link-body-emphasis">Projects</a>
+                            </li>
+                            <li class="nav-item m-1">
+                                <a href="#" class="nav-link link-body-emphasis">Skills</a>
+                            </li>
+                            <li class="nav-item m-1">
+                                <a href="#" class="nav-link link-body-emphasis">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
+        <hr />
     </section>
 
 
+    <!-- Cover -->
+    <section>
+        <div class="container d-block">
+            <div class="row mt-5 justify-content-center align-items-center">
+                <div class="col-12 col-md-6 px-3 py-4">
+                    <img src="./images/akPw-Gto.jpg" width="75%" class="rounded-circle mx-auto d-block">
+                </div>
+                <div class="col-12 col-md-6 px-3">
+                    <h1 class="display-3">Hi, I'm Loredana Piazza</h1>
+                    <h2>Full Stack Developer</h2>
+                    <p class="lead">I'm a Full Stack Developer who enjoys tackling challenges and
+                        building meaningful projects. Always curious and driven, I'm excited to keep growing and
+                        creating.</p>
+                    <!-- <p class="lead"> <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn
+                            more</a> </p>  -->
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
