@@ -1,0 +1,77 @@
+.link-body-emphasis {
+    color: rgba(255, 255, 255, 0.661) !important;
+}
+
+/* custom hover emphasis */
+.nav-pills .nav-link {
+    transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: rgb(99, 101, 241);
+    /* soft indigo background */
+    color: white;
+}
+
+.boxes {
+    background-color: rgba(27, 26, 85, 0.5);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.timeline {
+    position: relative;
+    width: 4px;
+    height: 500px;
+    /* adjust as needed */
+    background: linear-gradient(to bottom, #00f0ff, #a000ff, #ff0077);
+    border-radius: 2px;
+}
+
+.border-light {
+    --bs-border-opacity: 0.7;
+}
+
+.gradient-custom {
+    /* background: #667EEA;
+    background: linear-gradient(34deg, rgba(102, 126, 234, 1) 0%, rgba(118, 75, 162, 1) 100%); */
+
+    /* background: #00F0FF;
+    background: linear-gradient(34deg, rgb(0, 162, 255) 0%, rgba(160, 0, 255, 0.66) 50%, rgba(255, 0, 119, 1) 100%); */
+
+    background: #D100B9;
+    background: linear-gradient(34deg, rgb(35, 0, 209) 0%, rgba(160, 0, 255, 1) 100%);
+}
+
+.gradient-text {
+    background: linear-gradient(34deg, rgb(102, 126, 234, 1) 0%, rgb(118, 75, 162, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* for Firefox */
+    color: transparent;
+    /* fallback */
+}
+
+li::marker {
+    color: rgb(102, 126, 234, 1);
+}
+
+.border-shadow {
+    transition: box-shadow 0.2s;
+}
+
+.border-shadow:hover {
+    -webkit-box-shadow:
+        0px 0px 10px 1px rgba(162, 0, 255, 0.674);
+    box-shadow:
+        0px 0px 10px 1px rgba(162, 0, 255, 0.674);
+}
