@@ -1,16 +1,23 @@
-.link-body-emphasis {
-    color: rgba(255, 255, 255, 0.661) !important;
+.nav-color,
+.nav-link:focus {
+    color: rgba(255, 255, 255, 0.661);
 }
 
-/* custom hover emphasis */
 .nav-pills .nav-link {
     transition: all 0.3s ease;
+    background-color: transparent !important;
 }
 
 .nav-pills .nav-link:hover {
-    background-color: rgb(99, 101, 241);
-    /* soft indigo background */
+    /* background-color: rgb(99, 101, 241); */
+    background-color: transparent;
+
     color: white;
+
+    -webkit-box-shadow:
+        0px 0px 10px 1px rgba(162, 0, 255, 0.674);
+    box-shadow:
+        0px 0px 10px 1px rgba(162, 0, 255, 0.674);
 }
 
 .boxes {
@@ -31,7 +38,7 @@ h6 {
     position: relative;
     width: 4px;
     height: 500px;
-    /* adjust as needed */
+
     background: linear-gradient(to bottom, #00f0ff, #a000ff, #ff0077);
     border-radius: 2px;
 }
@@ -66,9 +73,14 @@ li::marker {
 }
 
 .border-shadow {
-    transition: box-shadow 0.2s;
+    transition: all 0.3s ease;
 }
 
+.border-nav-pills {
+    border-color: transparent;
+}
+
+.nav-link.active,
 .border-shadow:hover {
     -webkit-box-shadow:
         0px 0px 10px 1px rgba(162, 0, 255, 0.674);
